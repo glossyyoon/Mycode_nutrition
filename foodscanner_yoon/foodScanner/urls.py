@@ -21,7 +21,7 @@ import foodApp.views
 urlpatterns = [
     path('', foodApp.views.main, name = 'gender'),
     path('main.html', foodApp.views.calculate, name = 'main'),
-    path('main_man.html', foodApp.views.calculate, name = 'main_man'),
+    path('main_man.html', foodApp.views.calculate_man, name = 'main_man'),
     path('admin/', admin.site.urls),
     path('detail/<int:detail_id>', foodApp.views.detail, name = 'detail'),
     path('detail_man/<int:detail_id>', foodApp.views.detailman, name = 'detailman'),
