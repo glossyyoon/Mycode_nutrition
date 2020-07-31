@@ -11,11 +11,11 @@
     <center><img src="static/쿠키.png" style="width: 250px; height: 250px;"></center>
     <div class="infobox">
         {% for post in Ingredients1 %}
-        <h2>상품명: {{post.name}}</h2>
+        <h2>상품명: {{post.product_name}}</h2>
         <div class="one" style="position: relative;">
-            {% if post.carbonhydrate >= 342 %}
+            {% if post.carbohydrate >= 342 %}
             <a href="{% url 'detail' post.id %}"><img src = "static/탄수화물파.png" style="width: 120px;"></a>
-            {% elif post.carbonhydrate < 342 %}
+            {% elif post.carbohydrate < 342 %}
             <a href="{% url 'detail' post.id %}"><img src = "static/탄수화물노.png" style="width: 120px;"></a>
             {% endif %}
 
@@ -53,11 +53,11 @@
                 
             {% endif %}
 
-            {% if post.calorie > 670 %}
+            {% if post.kcal > 670 %}
             <a href="{% url 'detail' post.id %}"><img src = "static/칼로리빨.png" style="width: 120px;"></a>
-            {% elif 570 <= post.calorie <= 670 %}
+            {% elif 570 <= post.kcal <= 670 %}
             <a href="{% url 'detail' post.id %}"><img src = "static/칼로리파.png" style="width: 120px;"></a>
-            {% elif post.calorie < 0 %}
+            {% elif post.kcal < 0 %}
             <a href="{% url 'detail' post.id %}"><img src = "static/칼로리노.png" style="width: 120px;"></a>
             {% endif %}
         </div>

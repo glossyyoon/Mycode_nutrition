@@ -1,4 +1,9 @@
 from django.contrib import admin
+from import_export.admin import ExportActionModelAdmin, ImportExportMixin, ImportMixin
+
 from .models import Ingredient
-# Register your models here.
-admin.site.register(Ingredient)
+
+class IngredientAdmin(ImportExportMixin, admin.ModelAdmin):
+    pass
+
+admin.site.register(Ingredient, IngredientAdmin)
