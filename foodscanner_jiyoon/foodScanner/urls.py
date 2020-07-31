@@ -24,7 +24,7 @@ urlpatterns = [
     path('main_man.html', foodApp.views.calculate_man, name = 'main_man'),
     path('admin/', admin.site.urls),
     path('detail/<int:detail_id>', foodApp.views.detail, name = 'detail'),
-    path('detail_man/<int:detail_id>', foodApp.views.detailman, name = 'detailman'),
+    path('detail_man/<int:detail_id>', foodApp.views.detail_man, name = 'detail_man'),
 
 ]
 

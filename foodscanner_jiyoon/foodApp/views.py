@@ -30,6 +30,6 @@ def detail(request, detail_id):
     detail_obj = get_object_or_404(Ingredient, pk = detail_id)
     return render(request, 'detail.html', {"detail_key":detail_obj})
 
-def detailman(request, detail_id):
+def detail_man(request, detail_id):
     detail_obj = get_object_or_404(Ingredient, pk = detail_id)
     return render(request, 'detail_man.html', {"detail_key":detail_obj})
