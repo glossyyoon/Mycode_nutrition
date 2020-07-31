@@ -23,8 +23,24 @@ urlpatterns = [
     path('main.html', foodApp.views.calculate, name = 'main'),
     path('main_man.html', foodApp.views.calculate_man, name = 'main_man'),
     path('admin/', admin.site.urls),
-    path('detail/<int:detail_id>', foodApp.views.detail, name = 'detail'),
-    path('detail_man/<int:detail_id>', foodApp.views.detailman, name = 'detailman'),
 
+    path('form/',foodApp.views.form, name = 'form'),
+    path('form1/',foodApp.views.form1, name = 'form1'),
+
+    path('detail/<int:detail_id>', foodApp.views.detail, name = 'detail'),
+    path('detail1/<int:detail_id>', foodApp.views.detail1, name = 'detail1'),
+    path('detail2/<int:detail_id>', foodApp.views.detail2, name = 'detail2'),
+    path('detail3/<int:detail_id>', foodApp.views.detail3, name = 'detail3'),
+    path('detail4/<int:detail_id>', foodApp.views.detail4, name = 'detail4'),
+    path('detail5/<int:detail_id>', foodApp.views.detail5, name = 'detail5'),
+    path('detail6/<int:detail_id>', foodApp.views.detail6, name = 'detail6'),
+
+    path('detail_man/<int:detail_id>', foodApp.views.detailman, name = 'detailman'),
+    path('detail_man1/<int:detail_id>', foodApp.views.detailman1, name = 'detailman1'),
+    path('detail_man2/<int:detail_id>', foodApp.views.detailman2, name = 'detailman2'),
+    path('detail_man3/<int:detail_id>', foodApp.views.detailman3, name = 'detailman3'),
+    path('detail_man4/<int:detail_id>', foodApp.views.detailman4, name = 'detailman4'),
+    path('detail_man5/<int:detail_id>', foodApp.views.detailman5, name = 'detailman5'),
+    path('detail_man6/<int:detail_id>', foodApp.views.detailman6, name = 'detailman6'),
 ]
 
